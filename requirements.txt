@@ -5,3 +5,4 @@ sqlparse==0.5.3
 pymysql==1.1.1
 python-dotenv
 django-ckeditor-5==0.2.18
+cryptography==45.0.4
