@@ -1,0 +1,24 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+
+# Django stuff:
+*.sqlite3
+*.log
+*.pot
+*.pyc
+db.sqlite3
+
+# Static files (kecuali kalau ingin include hasil collectstatic)
+
+# VSCode settings
+.vscode/
+
+# Secrets
+.env
