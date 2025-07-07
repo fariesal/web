@@ -11,7 +11,6 @@ from django import forms
 from django.shortcuts import get_object_or_404
 from django.contrib.auth.models import Group
 
-# Create your views here.
 
 def in_operator(user):
     get_user = user.groups.filter(name='Operator').count()
@@ -28,8 +27,6 @@ class UserEditForm(forms.ModelForm):
             'groups': forms.CheckboxSelectMultiple(),
         }
 
-
-############################ user biasa ###########################################
 
 @login_required(login_url='/auth-login')
 def artikel_list(request):
@@ -99,8 +96,6 @@ def artikel_delete(request, id_artikel):
 
 
 
-#################################################### admin #########################################################
-
 @login_required(login_url='/auth-login')
 @user_passes_test(in_operator, login_url='/')
 def admin_kategori_list(request):
@@ -166,7 +161,6 @@ def admin_kategori_delete(request, id_kategori):
     return redirect(admin_kategori_list)
 
 
-########################################### Artikel Blog #####################################################
 
 @login_required(login_url='/auth-login')
 @user_passes_test(in_operator, login_url='/')
@@ -234,7 +228,6 @@ def admin_artikel_delete(request, id_artikel):
     return redirect(admin_artikel_list)
 
 
-############################ Managemant user by operator ###############################
 
 @login_required(login_url='/auth-login')
 @user_passes_test(in_operator, login_url='/')

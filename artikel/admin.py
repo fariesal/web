@@ -13,5 +13,3 @@ class ArtikelBlogAdmin(admin.ModelAdmin):
     list_display = ['kategori', 'judul', 'created_at','created_by','status']
     search_fields = ['judul']
 admin.site.register(ArtikelBlog, ArtikelBlogAdmin)
-
-

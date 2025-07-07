@@ -14,48 +14,6 @@ class KategoriForms(forms.ModelForm):
                 }),
         }
 
-# widgets = {
-#                attrs={
-#                    'data-style': 'btn btn-danger btn-block',
-#                    'title' : 'pilih kategori',
-#                    'data-size' : '7',
-#                }),
-#            "nama" : forms.TextInput(
-#                attrs={
-#                    'class': 'form-control',
-#                    'cols': '30',
-#                    'rows': '10',
-#                    'required': True
-#                }),
-#            "jumlah" : forms.TextInput(
-#               attrs={
-#                    'class': 'form-control',
-#                    'cols': '30',
-#                    'rows': '10',
-#                    'required': True
-#                }),
-#            "baik" : forms.TextInput(
-#                attrs={
-#                    'class': 'form-control',
-#                    'cols' : '30',
-#                    'rows': '10',
-#                    'required': True
-#                }),
-#            "perbaikan" : forms.TextInput(
-#                attrs={
-#                    'class': 'form-control',
-#                    'cols': '30',
-#                    'rows': '10',
-#                    'required': True
-#                }),
-#            "musnah" : forms.TextInput(
-#                attrs={
-#                    'class': 'form-control',
-#                    'cols': '30',
-#                    'rows': '10',
-#                    'required': True
-#                }),
-#        }
 
 class ArtikelForms(forms.ModelForm):
     class Meta:
@@ -76,15 +34,4 @@ class ArtikelForms(forms.ModelForm):
 
             "konten" : CKEditor5Widget(config_name='extends', attrs={"class": "django_ckeditor_5"}),
 
-            # "gambar" : forms.TextInput(
-            #     attrs={
-            #        'class': 'form-control',
-            #        'required': True,
-            #    }),
-
-            #"status" : forms.TextInput(
-            #    attrs={
-            #        'class': 'form-control',
-            #        'required': True,
-            #    }),
         }
